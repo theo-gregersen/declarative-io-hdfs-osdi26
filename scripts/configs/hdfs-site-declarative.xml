@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+		<name>declarative.scheduling.rate.ratio</name>
+		<value>1.0</value>
+	</property>
+	<property>
+		<name>dfs.blocksize</name>
+		<value>134217728</value>
+	</property>
+	<property>
+		<name>dfs.client.socket-timeout</name>
+		<value>36000000</value>
+	</property>
+	<property>
+		<name>dfs.datanode.handler.count</name>
+		<value>1080</value>
+	</property>
+	<property>
+		<name>dfs.namenode.handler.count</name>
+		<value>1280</value>
+	</property>
+	<property>
+		<name>dfs.namenode.reconstruction.pending.timeout-sec</name>
+		<value>43200</value>
+	</property>
+	<property>
+		<name>dfs.namenode.heartbeat.recheck-interval</name>
+		<value>120000</value>
+	</property>
+	<property>
+		<name>dfs.client.block.write.locateFollowingBlock.retries</name>
+		<value>6</value>
+	</property>
+	<property>
+		<name>dfs.datanode.data.dir</name>
+		<value>file:///mnt/ext4/dfs/data</value>
+	</property>
+	<property>
+		<name>declarative.scheduling.period.seconds</name>
+		<value>30</value>
+	</property>
+	<property>
+		<name>declarative.scheduling.max.mbs</name>
+		<value>120</value>
+	</property>
+	<property>
+		<name>declarative.scheduling.dispatch.clusters</name>
+		<value>1</value>
+	</property>
+	<property>
+		<name>dfs.balancer.service.interval</name>
+		<value>1m</value>
+	</property>
+	<property>
+		<name>dfs.balancer.getBlocks.min-block-size</name>
+		<value>10485760</value>
+	</property>
+	<property>
+		<name>dfs.balancer.max-size-to-move</name>
+		<value>4294967296</value>
+	</property>
+	<property>
+		<name>dfs.datanode.balance.bandwidthPerSec</name>
+		<value>160m</value>
+	</property>
+	<property>
+		<name>dfs.balancer.max-iteration-time</name>
+		<value>21600000</value>
+	</property>
+	<property>
+		<name>dfs.datanode.scan.period.hours</name>
+		<value>100</value>
+	</property>
+	<property>
+		<name>declarative.scrubbing.period.seconds</name>
+		<value>360000</value>
+	</property>
+	<property>
+		<name>declarative.scrubbing.delay.seconds</name>
+		<value>23500</value>
+	</property>
+	<property>
+		<name>dfs.block.scanner.volume.bytes.per.second</name>
+		<value>167772160</value>
+	</property>
+	<property>
+		<name>dfs.datanode.ec.reconstruct.read.bandwidthPerSec</name>
+		<value>0</value>
+	</property>
+	<property>
+		<name>dfs.datanode.ec.reconstruct.write.bandwidthPerSec</name>
+		<value>0</value>
+	</property>
+	<property>
+		<name>declarative.scrubbing.deadline.seconds</name>
+		<value>291600</value>
+	</property>
+	<property>
+		<name>declarative.rebalance.deadline.seconds</name>
+		<value>48600</value>
+	</property>
+	<property>
+		<name>declarative.reconstruction.deadline.seconds</name>
+		<value>9720</value>
+	</property>
+	<property>
+		<name>declarative.scrubbing.rate</name>
+		<value>0</value>
+	</property>
+	<property>
+		<name>declarative.rebalance.rate</name>
+		<value>0</value>
+	</property>
+	<property>
+		<name>declarative.reconstruction.rate</name>
+		<value>0</value>
+	</property>
+	<property>
+		<name>dfs.datanode.max.locked.memory</name>
+		<value>8589934592</value>
+	</property>
+	<property>
+		<name>dfs.namenode.path.based.cache.retry.interval.ms</name>
+		<value>3000</value>
+	</property>
+	<property>
+		<name>dfs.cachereport.intervalMsec</name>
+		<value>5000</value>
+	</property>
+	<property>
+		<name>declarative.cache.delay.ms</name>
+		<value>50000</value>
+	</property>
+	<property>
+		<name>dfs.datanode.fsdatasetcache.max.threads.per.volume</name>
+		<value>8</value>
+	</property>
+	<property>
+		<name>dfs.namenode.path.based.cache.refresh.interval.ms</name>
+		<value>3000</value>
+	</property>
+	<property>
+		<name>dfs.client.read.use.cache.priority</name>
+		<value>true</value>
+	</property>
+</configuration>
