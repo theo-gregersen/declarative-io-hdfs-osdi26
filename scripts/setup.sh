@@ -40,3 +40,7 @@ sudo ldconfig
 # Can delete with cgdelete memory:hdfs
 sudo cgcreate -t root:root -a root:root -g memory:/hdfs
 
+# Install and setup dfs-perf, will need to be built with mvn later
+cd .. && git clone git@github.com:PasaLab/dfs-perf.git
+cd dfs-perf && sed -i 's/<hadoop.version>2.3.0<\/hadoop.version>/<hadoop.version>3.4.0<\/hadoop.version>/' pom.xml
+cd ../scripts

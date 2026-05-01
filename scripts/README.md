@@ -5,11 +5,11 @@ The scripts in this folder are intended for Unix systems and bash.
 
 ## Building
 - `setup.sh` will install all the pre-requisites for building and running the system.
-- You'll also need to install [dfs-perf](https://pasa-bigdata.nju.edu.cn/dfs-perf/index.html).
-    - There are multiple ways to do so (build from source, install via tar, etc.); here are [their instructions](https://pasa-bigdata.nju.edu.cn/dfs-perf/Running-DFS-Perf-on-a-Cluster.html).
-    - We use dfs-perf to fill the filesystem with data.
+    - Part of this fetches the source code of [dfs-perf](https://github.com/PasaLab/dfs-perf), which we use to fill the file system with data.
+    - After using the setup script, build dfs-perf by running `mvn package` in the new `dfs-perf` source directory.
+    Your Java version and home should be set to Java 8 when building.
 - `env.sh` has several environment variables that need to be set.
-When building HDFS, the Java version and home need to be Java 8. When running HDFS, it should be Java 11.
+When building HDFS, the Java version and home need to be Java 8. When running HDFS, they should be Java 11.
 - `hdfs_build_cmd.sh` has the command used to build HDFS from our source directories (either 
 the declarative or baseline versions in this repository).
 Run this from the root source directory.
@@ -31,7 +31,7 @@ Run this from the root source directory.
     - `$DFS_PERF_HOME/conf/testsuite/SimpleWrite.xml` is where the dfs-perf write parameters are configured.
     - `$DFS_PERF_HOME/conf/dfs-perf-env.sh` has other dfs-perf variables that must be set (e.g. namenode address).
         - We set `DFS_PERF_THREADS_NUM=2` and use 4 slves.
-        - See [their instructions](https://pasa-bigdata.nju.edu.cn/dfs-perf/Running-DFS-Perf-on-HDFS.html) for other configuration requirements.
+        - See [their instructions](https://pasa-bigdata.nju.edu.cn/dfs-perf/Running-DFS-Perf-on-HDFS.html) for configuration.
     - Our `hdfs-site.xml` and `SimpleWrite.xml` configuration files are in the `configs` folder for copying.
 - `experiment.sh` is the high-level experiment script used for the paper.
 To use this to run our experiment on your own cluster, you'll have to set some of the variables at the top of the
