@@ -1,12 +1,14 @@
 # HDFS with declarative IO
 
+This repository is an artifact for the OSDI'26 paper [Scaling the IO wall with Declarative IO](https://www.usenix.org/conference/osdi26/presentation/mcallister).
+
 ## Overview:
 
 This repository contains source code and scripts for running HDFS with declarative IO.
 - `hdfs-declarative/` contains source code for the declarative version of HDFS.
 - `hdfs-baseline/` contains source code for the baseline version of HDFS (with modifications to support
 our transcoding operations and some slight smoothing to maintenance task timing).
-- `scripts/` contains scripts and instructions for building and running experiments on a cluster.
+- `scripts/` contains scripts and instructions for [building and running experiments on a cluster](https://github.com/theo-gregersen/declarative-io-hdfs-osdi26/blob/main/scripts/README.md).
 
 ## Source code: key HDFS files and modifications for declarative IO
 
